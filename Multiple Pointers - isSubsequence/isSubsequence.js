@@ -14,17 +14,17 @@ Time Complexity - O(N + M)
 Space Complexity - O(1)
 
 */
-function isSubsequence(st1,st2){
-    var i=0,j=0;//pointers
-    while(j<st2.length){
-    if(st2[j]==st1[i]) i++;
-    if(i==st1.length)return true;
+function isSubsequence(st1, st2) {
+  var i = 0,
+    j = 0; //pointers
+  while (j < st2.length) {
+    if (st2[j] == st1[i]) i++;
+    if (i == st1.length) return true;
     j++;
-    }
-    return false;
-    }
-    console.log(isSubsequence('hello', 'hello world'));
-    console.log(isSubsequence('sing', 'sting'));
-    console.log(isSubsequence('abc', 'abracadabra'));
-    console.log(isSubsequence('abc', 'acb'));
-    
+  }
+  return false;
+}
+console.log(isSubsequence("hello", "hello world"));
+console.log(isSubsequence("sing", "sting"));
+console.log(isSubsequence("abc", "abracadabra"));
+console.log(isSubsequence("abc", "acb"));
