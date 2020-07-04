@@ -1,3 +1,6 @@
+/*Write a function which takes in a string and returns counts of each character in the string*/
+
+/*Using Logic it has more time  complexity*/
 var st;
 var obj = {};
 function Characters(st) {
