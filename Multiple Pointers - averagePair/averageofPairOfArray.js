@@ -14,24 +14,20 @@ averagePair([1,3,3,5,6,7,10,12,19],8) // true
 averagePair([-1,0,3,4,5,6], 4.1) // false
 averagePair([],4) // false
 */
-function averagePair(arr,avg){
-    var len=arr.length;
-    var leftPointer=0,rightPointer=len-1;
-    while(leftPointer<=rightPointer){
-    var avgSum=((arr[leftPointer]+arr[rightPointer])/2).toFixed(2);
-    
-    if(avg==avgSum)return true;
-    else if(avg>avgSum)leftPointer++;
-    else if(avg<avgSum)rightPointer--; 
-    
-    
-    
-    }
-    return false;
-    }
-    
-    console.log(averagePair([1,2,3],2.5));
-    console.log(averagePair([1,3,3,5,6,7,10,12,19],8));
-    console.log(averagePair([-1,0,3,4,5,6], 4.1));
-     
-    
+function averagePair(arr, avg) {
+  var len = arr.length;
+  var leftPointer = 0,
+    rightPointer = len - 1;
+  while (leftPointer <= rightPointer) {
+    var avgSum = ((arr[leftPointer] + arr[rightPointer]) / 2).toFixed(2);
+
+    if (avg == avgSum) return true;
+    else if (avg > avgSum) leftPointer++;
+    else if (avg < avgSum) rightPointer--;
+  }
+  return false;
+}
+
+console.log(averagePair([1, 2, 3], 2.5));
+console.log(averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8));
+console.log(averagePair([-1, 0, 3, 4, 5, 6], 4.1));
